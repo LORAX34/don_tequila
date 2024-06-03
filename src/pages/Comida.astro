@@ -1,57 +1,56 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from'../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
 ---
 
 <Layout title="Don Tequila">
-	<main>
-		<Header src="https://www.pinterest.com/cfdb4970-0af4-4af6-b0e8-3ce98a33d075https://i.pinimg.com/736x/89/4d/7a/894d7ac5d08437d82418118bf0d4697e.jpg"/>
-		
-		<nav class="card-grid">
-			<Card
-			title='Taquito'
-			body='$300'
-			href='/'
-			foto='/public/header_foto.jpg'
-			/>
-			<Card
-			title='Taquito'
-			body='300'
-			href='/'
-			foto='/public/header_foto.jpg'
-			/>
-			<Card
-			title='Taquito'
-			body='300'
-			href='/'
-			foto='/public/header_foto.jpg'
-			/>
-			<Card
-			title='Taquito'
-			body='300'
-			href='/'
-			foto='/public/header_foto.jpg'.
-			/>
-		</nav>
-	</main>
+  <main>
+    <Header />
+    <nav class="card-grid">
+      <Card
+        title="Taquito"
+        body="$300"
+        href="/"
+        foto="/public/header_foto.jpg"
+      />
+      <Card
+        title="Taquito"
+        body="300"
+        href="/"
+        foto="/public/header_foto.jpg"
+      />
+      <Card
+        title="Taquito"
+        body="300"
+        href="/"
+        foto="/public/header_foto.jpg"
+      />
+      <Card
+        title="Taquito"
+        body="300"
+        href="/"
+        foto="/public/header_foto.jpg"
+        .
+      />
+    </nav>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.card-grid{
-		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(24ch,1fr));
-		gap: 2rem;
-		padding: 2;
-	}
-	
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 2;
+  }
 </style>
