@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Don Tequila">
+  <main>
+    <Header/>
+    <nav class="card-grid">
+      <Card
+        title="Margarita"
+        body="$300"
+        href="/"
+        foto="/public/bebida/Margarita.jfif"
+      />
+      <Card
+        title="Ron Collins"
+        body="$300"
+        href="/"
+        foto="/public/bebida/Ron collins.jpg"
+      />
+      <Card
+        title="Chelada"
+        body="$300"
+        href="/"
+        foto="/public/bebida/cheladada.jfif"
+      />
+    
+      <Card
+        title="Cubanito"
+        body="$300"
+        href="/"
+        foto="/public/bebida/cunaito.jfif"
+        .
+      />
+	  <Card
+        title="CubaLibre"
+        body="$300"
+        href="/"
+        foto="/public/bebida/cubalibre.jfif"
+      />
+	  <Card
+        title="Daiquiri"
+        body="$300"
+        href="/"
+        foto="/public/bebida/daiquiri.jfif"
+      />
+	  <Card
+        title="Bloody Mary"
+        body="$300"
+        href="/"
+        foto="/public/bebida/bloody-mary.jfif"
+      />
+	  <Card
+        title="Jugo de Tomate"
+        body="$300"
+        href="/"
+        foto="/public/bebida/jugotomate.webp"
+      />
+	  <Card
+        title="Limonada"
+        body="$300"
+        href="/"
+        foto="/public/bebida/limonada.jfif"
+      />
+	  <Card
+        title="Mojito"
+        body="$300"
+        href="/"
+        foto="/public/bebida/mojito.jfif"
+      />
+	  <Card
+        title="Caipirinha"
+        body="$300"
+        href="/"
+        foto="/public/bebida/caipirina.png"
+      />
+	  <Card
+        title="Caipiroska"
+        body="$300"
+        href="/"
+        foto="/public/bebida/caipiroska.jfif"
+      />
+	  <Card
+        title="Caipirissima"
+        body="$300"
+        href="/"
+        foto="/public/bebida/caipirissssima.jfif"
+      />
+    </nav>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 2;
+  }
+</style>
